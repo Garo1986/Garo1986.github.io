@@ -80,6 +80,10 @@
   line-height: 1.5;
 }
 
+.fa-calendar-alt, .fa-map-marker-alt {
+  margin-right: 10px;
+}
+
 @media (max-width: 800px) {
   .buttonLink {
     font-size: 30px;
@@ -321,6 +325,10 @@
   font-size: 25px;
   margin: 2rem 0;
   color: #3a811d;
+}
+
+.contacts_icons {
+  font-size: 30px;
 }
 
 .contacts_description {
