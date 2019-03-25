@@ -1,0 +1,62 @@
+.header
+    margin-top: 2rem
+    &_title
+    text-align: center
+    font-size: 25px
+    color: #3a811d
+    &_right
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        &_price
+            color: #5e5e5e
+.header_description
+    margin-top: 3rem
+    width: 100%
+    display: flex
+    //align-items: center
+    justify-content: space-between
+    &_image
+        max-width: 55%
+        box-shadow: 0px 0px 49px 1px #5e5e5e
+        border-radius: 8px
+
+.buttonLink
+    text-decoration: none
+    color: #fff
+    border: 1px solid darken
+    font-size: 45px
+    padding: 10px 15px
+    background: green
+    border-radius: 10px
+    transition: .2s 
+    &:hover
+        box-shadow: 0px 0px 49px 1px #5e5e5e
+.whenData
+    margin: 4rem 0
+    text-align: center
+    font-weight: bold
+    font-size: 30px
+    color: #5e5e5e
+    line-height: 1.5
+
+@media (max-width: 800px) 
+    .buttonLink
+        font-size: 30px
+    .header
+        &__title
+            font-size: 35px
+    .header_description img
+        max-width: 100%
+@media (max-width: 991px) 
+    .header_right
+        margin-top: 3rem
+    .whenData
+        font-size: 20px
+    .header_description
+        display: flex
+        flex-direction: column
+    .buttonLink
+        margin: 2rem 0
+        font-size: 30px

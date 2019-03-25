@@ -1,0 +1,79 @@
+.contacts
+    &_title
+        text-align: center
+        font-size: 25px
+        margin: 2rem 0
+        color: #3a811d
+    &_description
+        color: #5e5e5e
+        font-size: 20px
+        margin: 2rem 0               
+        &strong
+            font-weight: 900
+    &_danger
+        text-align: center
+        font-size: 25px
+        margin: 2rem 0
+        color: #5e5e5e
+        &_price
+            display: block
+            margin: 2rem 0
+
+    &_links
+        display: flex
+        justify-content: space-between
+        margin: 3rem 0
+        
+        &_footer
+            text-decoration: none
+            color: #5e5e5e
+            padding: 5px
+            border-radius: 8px
+            box-shadow: 0px 0px 30px 1px #5e5e5e
+
+.footerButton
+    font-size: 25px
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    margin-bottom: 2rem
+.fotorama
+    margin-top: 10rem
+    &__arr--next
+        right: 32%
+    &__arr--prev 
+        left: 32%
+@media (max-width: 900px)
+    .fotorama__arr--prev
+        left: 18%
+    .fotorama__arr--next
+        right: 18%
+    .contacts_links
+        display: flex
+        flex-direction: column
+        &_footer
+            margin: 5px 0
+            box-shadow: none
+            text-align: center
+
+@media (max-width: 750px)
+    .fotorama__arr--prev
+        left: 10%
+    .fotorama__arr--next
+        right: 10%
+    .contacts_title
+        font-size: 20px
+        strong
+            display: block
+    .contacts_danger
+        font-size: 20px
+    .contacts_description
+        text-align: center
+        line-height: 1.6
+        strong
+            display: block
+@media (max-width: 550px)
+    .fotorama__arr--prev
+        left: 5%
+    .fotorama__arr--next
+        right: 5%
