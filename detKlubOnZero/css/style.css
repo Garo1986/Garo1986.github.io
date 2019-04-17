@@ -37,6 +37,13 @@ section {
 	background-color: #fdeef6;
 	padding: 10px 25px 30px;
 }
+.bg-gray {
+	background-color: #f6f6f6;
+	padding: 10px 25px;
+}
+/*#programmSeminar, #Autor, #Price, #Contact {
+	padding-top: 20px;
+}*/
 .navbar {
 	width: 100%;
 	position: fixed;
@@ -171,7 +178,128 @@ section {
 .fa-check-circle {
 	font-size: 43px;
 }
+.beforeProgramm .col-md-4 {
+	text-align: center;
+}
+.beforeProgrammTitle {
+	text-align: center;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+.beforeProgrammImage {
+	max-width: 100%;
+	margin-bottom: 25px;
+}
+.programmTitle {
+	display: block;
+	width: 100%;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #dcf4e0;
+	color: #5e5e5e;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'GothicA1';
+	font-size: 50px;
+}
+.programmList {
+	margin-top: 20px;
+	font-size: 18px;
+	padding-left: 0;
+}
+.programmListDesc {
+	margin-left: 40px;
+	line-height: 2;
+}
+.programmListDesc:last-child {
+	margin-bottom: 40px;
+}
+.programmListDesc:first-child {
+	margin-top: 20px;
+}
+.autorSeminarTitle {
+	display: block;
+	width: 100%;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #fdeef6;
+	color: #5e5e5e;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'GothicA1';
+	font-size: 50px;
+}
+.autorSeminarDesc {
+	margin: 30px 0px;
+}
+.autorDescription {
+	margin: 20px 0px;
+}
+.autorLineTimofeeva {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 3px;
+	background-color: #fdeef6;
+}
+.autorLineShevchenko {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 20px;
+	background-color: #fdeef6;
+}
 
+.fa-calendar-check {
+	border: 5px solid #5e5e5e;
+	font-size: 45px;
+    padding: 30px;
+    border-radius: 100px;
+    margin-bottom: 30px;
+}
+.dataSeminarTitle {
+	font-family: 'GothicA1';
+}
+.dataSeminarDesc {
+	margin-top: 40px;
+	line-height: 2;
+}
+.dataSeminarImg {
+	max-width: 100%;
+}
+.priceSeminarImg {
+	max-width: 100%;
+}
+.priceSem {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.lineIndent {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 1px;
+	background-color: #5e5e5e;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.placeSeminarTitle {
+	font-family: 'GothicA1';
+}
+.placeSeminarDesc {
+	font-size: 22px;
+}
+.footer {
+	font-size: 14px;
+}
+.footer a {
+	display: block;
+	text-decoration: none;
+	color: #5e5e5e;
+}
+.footerDesc {
+	line-height: 2;
+}
 @media (max-width: 1200px) {
 	body {
 		font-size: 20px;
@@ -192,5 +320,34 @@ section {
 	}
 	h2 {
 		font-size: 26px;
+	}
+}
+@media (max-width: 765px) {
+	.autorSeminarDesc {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.autorSeminarDesc img {
+		margin-right: auto!important;
+		margin-left: auto!important;
+	}
+	.dataSeminarImg {
+	max-width: 70%;
+	}
+	.placeSeminarTitle {
+		font-size: 24px;
+	}
+	.placeSeminarDesc {
+		font-size: 14px;
+	}
+	.placeGeo {
+		margin-top: 30px;
+	}
+	.logoFooter, .footerDesc, .footerAdress {
+		text-align: center;
+	}
+	.footerDesc {
+		margin-top: 20px;
 	}
 }
