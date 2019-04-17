@@ -350,4 +350,7 @@ section {
 	.footerDesc {
 		margin-top: 20px;
 	}
+	.footerLogo {
+		max-width: 25%;
+	}
 }
