@@ -1,0 +1,85 @@
+@media (max-width: 1199.98px)
+    html
+        font-size: 15px
+    .header
+        height: 70vh
+    .wrapper
+        max-width: min-content
+        h1
+            max-width: 100%
+    .container
+        padding-left: 15px
+        padding-right: 15px
+
+@media (max-width: 991.98px)
+    html
+        font-size: 14px
+    .header
+        padding-top: 10px
+    .wrapper
+        max-width: min-content
+@media (max-width: 767.98px)
+    html
+        font-size: 12px
+        .social
+            &__insta, &__youtube
+                width: 25px
+@media (max-width: 600px)
+    .header
+        height: auto
+
+    .nav-row
+        padding: 10px 10px 0
+        align-items: flex-start
+        flex-wrap: wrap
+        justify-content: space-between
+        &__menu
+            display: flex
+            justify-content: center
+            width: 100%
+        &__item
+            display: none
+            flex-direction: column
+        &__link
+            line-height: 2
+            font-size: 1.5rem
+            a
+            &:after
+                display: none
+        &__social
+            display: none
+        &__btn
+            display: block
+        &__active
+            display: flex
+    .header
+        background-image: none
+        &__wrap
+            justify-content: center
+@media (max-width: 575.98px)
+    .header
+        &__title
+            text-align: center
+        &__subtitle
+            text-align: center
+    .nav-row
+        &__link
+            font-size: 1.2rem
+    .variant
+        &__many
+            width: 50%
+        &__wrap
+            flex-direction: column
+            align-items: center
+    .footer
+        &__wrap
+            display: flex
+            flex-direction: column
+        &__mail
+            margin: 20px 0
+        &__social
+            width: 20%
+@media (max-width: 400px)
+    .header
+        &__title
+            font-size: 3rem!important
