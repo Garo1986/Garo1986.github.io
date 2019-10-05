@@ -179,11 +179,13 @@ section {
 .wrapper h1 {
   font-size: 6rem;
   max-width: 250px;
+  color: #5e5e5e;
 }
 
 .wrapper p {
   margin: 0;
   font-size: 1.5rem;
+  color: #5e5e5e;
 }
 
 main {
