@@ -11,7 +11,6 @@
 html {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  color: #5e5e5e;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -65,14 +64,13 @@ section {
 
 .nav-row__btn {
   display: none;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   background-color: transparent;
   border: none;
   position: absolute;
   right: 15px;
   top: 15px;
-  color: #5e5e5e;
 }
 
 .nav-row__btn:hover {
@@ -157,7 +155,7 @@ section {
 
 .header {
   margin-top: 80px;
-  padding-top: 16%;
+  padding-top: 200px;
   background-image: url(../image/header__NoTitle.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -303,18 +301,26 @@ main {
   }
   .header {
     height: 70vh;
+    padding-top: 100px;
   }
   .wrapper {
     max-width: -webkit-min-content;
     max-width: -moz-min-content;
     max-width: min-content;
+    margin-right: 140px;
   }
   .wrapper h1 {
-    max-width: 100%;
+    max-width: auto;
   }
   .container {
     padding-left: 15px;
     padding-right: 15px;
+  }
+}
+
+@media (max-width: 1025.98px) {
+  .wrapper {
+    margin-right: 120px;
   }
 }
 
@@ -323,12 +329,16 @@ main {
     font-size: 14px;
   }
   .header {
-    padding-top: 10px;
+    padding-top: 100px;
   }
   .wrapper {
-    max-width: -webkit-min-content;
-    max-width: -moz-min-content;
-    max-width: min-content;
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 921.98px) {
+  .wrapper {
+    margin-right: 50px;
   }
 }
 
@@ -336,7 +346,10 @@ main {
   html {
     font-size: 12px;
   }
-  html .social__insta, html .social__youtube {
+  .wrapper {
+    margin-right: 20px;
+  }
+  .social__insta, .social__youtube {
     width: 25px;
   }
 }
@@ -344,6 +357,7 @@ main {
 @media (max-width: 600px) {
   .header {
     height: auto;
+    padding-top: 20px;
   }
   .nav-row {
     padding: 10px 10px 0;
@@ -371,10 +385,12 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    text-align: center;
+    padding-left: 0;
   }
   .nav-row__link {
     line-height: 2;
-    font-size: 1.5rem;
+    font-size: 24px;
   }
   .nav-row__link:after {
     display: none;
@@ -384,6 +400,8 @@ main {
   }
   .nav-row__btn {
     display: block;
+    width: 50px;
+    height: 50px;
   }
   .nav-row__active {
     display: -webkit-box;
@@ -409,6 +427,10 @@ main {
   }
   .nav-row__link {
     font-size: 1.2rem;
+  }
+  .nav-row__btn {
+    width: 40px;
+    height: 40px;
   }
   .variant__many {
     width: 50%;

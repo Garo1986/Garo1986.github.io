@@ -3,30 +3,40 @@
         font-size: 15px
     .header
         height: 70vh
+        padding-top: 100px
     .wrapper
         max-width: min-content
+        margin-right: 140px
         h1
-            max-width: 100%
+            max-width: auto
     .container
         padding-left: 15px
         padding-right: 15px
-
+@media (max-width: 1025.98px)
+    .wrapper
+        margin-right: 120px
 @media (max-width: 991.98px)
     html
         font-size: 14px
     .header
-        padding-top: 10px
+        padding-top: 100px
     .wrapper
-        max-width: min-content
+        margin-right: 100px
+@media (max-width: 921.98px)
+    .wrapper
+        margin-right: 50px
 @media (max-width: 767.98px)
     html
         font-size: 12px
-        .social
-            &__insta, &__youtube
-                width: 25px
+    .wrapper
+        margin-right: 20px
+    .social
+        &__insta, &__youtube
+            width: 25px
 @media (max-width: 600px)
     .header
         height: auto
+        padding-top: 20px
 
     .nav-row
         padding: 10px 10px 0
@@ -40,9 +50,11 @@
         &__item
             display: none
             flex-direction: column
+            text-align: center
+            padding-left: 0
         &__link
             line-height: 2
-            font-size: 1.5rem
+            font-size: 24px
             a
             &:after
                 display: none
@@ -50,6 +62,8 @@
             display: none
         &__btn
             display: block
+            width: 50px
+            height: 50px
         &__active
             display: flex
     .header
@@ -65,6 +79,9 @@
     .nav-row
         &__link
             font-size: 1.2rem
+        &__btn
+            width: 40px
+            height: 40px
     .variant
         &__many
             width: 50%
