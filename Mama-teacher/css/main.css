@@ -418,6 +418,16 @@ nav ul li a {
   font-size: 18px;
   color: #44291B;
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer_mail a img {
+  margin-right: 5px;
 }
 
 .footer_social {
@@ -696,7 +706,7 @@ nav ul li a {
     margin-bottom: 15px;
   }
   .autor_photo {
-    max-width: 80%;
+    max-width: 60%;
     margin: 0 auto;
   }
   .present {
@@ -752,6 +762,9 @@ nav ul li a {
   }
   .variant_title {
     font-size: 26px;
+  }
+  .present_title {
+    font-size: 20px;
   }
 }
 
