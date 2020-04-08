@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мама-педагог</title>
+    <title>Мама-педагог - Бесплатно</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="img/Logo.svg" type="image/x-icon">
+	<link rel="shortcut icon" href="img/Logo.svg" />
 </head>
 <body>
     <header class="header">
@@ -22,7 +24,7 @@
                     </a>
                     <nav class="nav">
                         <ul class="nav-menu_link">
-                            <li> <a  href="#">Об авторе</a></li>
+                            <li> <a  href="about.html">Об авторе</a></li>
                             <li> <a class="nav-menu_link" href="#">Магазин</a></li>
                             <li> <a class="nav-menu_link" href="#">Мой блог</a></li>
                             <li> <a class="nav-menu_link" href="#">бесплатно</a></li>
@@ -52,14 +54,23 @@
                 <div class="free_wrap">
                     <h3 class="free_title">Забирайте свои&nbsp;подарки!</h3>
                     <!-- /.free_title -->
-                    <div class="free_subtitle">Комплект занятий не ферме</div>
+                    <div class="free_subtitle">Комплект занятий «на&nbsp;ферме»</div>
                     <div class="free_desc">чек лист</div>
-                    <div class="free_subtitle">«проверьте себя, перед тем как учить читать»</div>
-                    <div class="free-links">
+                    <div class="free_subtitle">«проверьте&nbsp;себя, перед&nbsp;тем&nbsp;как учить&nbsp;читать»</div>
+                    <!-- <div class="free-form">
                         <a href="#" class="free_link">скачать</a> 
-                        <!-- /.free_link -->
-                    </div>
-                    <!-- /.free-links -->
+                    </div> -->
+                    <form action="" class="free-form">
+                            <!-- Hidden Required Fields -->
+		                    <input type="hidden" name="project_name" value="Мама-педагог">
+		                    <input type="hidden" name="admin_email" value="info@shevnasti.ru">
+		                    <input type="hidden" name="form_subject" value="Форма с страницы бесплатно">
+                            <!-- END Hidden Required Fields -->
+                            
+                        <input type="text" name="Name" id="free-form_name" class="free-form_name"  placeholder="Имя">
+                        <input type="email" name="mail" id="free-form_mail" class="free-form_mail" placeholder="Mail">
+                        <button class="free-form_btn" type="submit">скачать</button>
+                    </form>
                 </div>
             </div>
         </section>

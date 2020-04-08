@@ -440,7 +440,8 @@ nav ul li a {
   background-image: url(../img/Group_3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 130px 0px 70px;
+  background-position-x: center;
+  padding: 70px 0px;
 }
 
 .free_wrap {
@@ -449,34 +450,53 @@ nav ul li a {
 }
 
 .free_title {
-  font-size: 68px;
+  font-size: 60px;
   color: #C4512D;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 
 .free_subtitle {
   text-transform: uppercase;
   font-size: 22px;
   color: #44291B;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 
 .free_desc {
   text-transform: uppercase;
   font-size: 22px;
   color: #44291B;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
-.free_link {
+.free-form_name {
+  text-transform: capitalize;
+}
+
+.free-form_btn {
   text-transform: uppercase;
-  color: #ffffff;
-  font-size: 36px;
-  padding: 28px 71px;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 50px;
   background-color: #C4512D;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: 100;
+  border-radius: 20px;
+  border: none;
+}
+
+.free-form_btn:hover {
+  cursor: pointer;
+}
+
+.free-form input {
+  display: block;
+  margin: 0 auto 30px;
+  width: 50%;
+  line-height: 1.6;
+  padding: 5px;
+  color: #44291B;
+  border: 1px solid #44291B;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
 @media (max-width: 1040px) {
@@ -615,6 +635,21 @@ nav ul li a {
   .autor_title {
     margin-bottom: 0;
   }
+  .free_title {
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+  .free_subtitle {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .free_desc {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .free-form input {
+    margin-bottom: 15px;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -704,6 +739,12 @@ nav ul li a {
   }
   .variant_title::after {
     display: none;
+  }
+  .free {
+    background-position-x: left;
+  }
+  .free_wrap {
+    max-width: 100%;
   }
 }
 
@@ -809,14 +850,42 @@ nav ul li a {
   .present_title {
     font-size: 20px;
   }
+  .free_title {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  .free_desc {
+    font-size: 18px;
+  }
+  .free_subtitle {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+  .free-form input {
+    width: 70%;
+  }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 354px) {
   .present_title {
     font-size: 18px;
   }
   .variant_title {
     font-size: 20px;
+  }
+  .free {
+    padding: 20px 0;
+  }
+  .free_title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .free_desc {
+    font-size: 16px;
+  }
+  .free_subtitle {
+    font-size: 16px;
+    margin-bottom: 16px;
   }
   .footer-logo_desc {
     font-size: 14px;
