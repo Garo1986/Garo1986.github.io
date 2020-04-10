@@ -1,0 +1,50 @@
+.popup
+    display: none
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    height: 100%
+    width: 100%
+    z-index: 9
+    background-color: rgba(0, 0, 0, 0.5)
+    
+    &_content
+        position: fixed
+        max-width: 350px
+        left: 50%
+        top: 10%
+        background-color: #ffffff
+        transform: translateX(-50%)
+        padding: 3rem 5rem
+    &_close
+        position: absolute
+        top: 0
+        right: -2rem
+        width: 2rem
+        text-align: center
+        border: none
+        background-color: transparent
+        font-size: 28px
+    &_content
+        text-align: center
+        p
+            margin-bottom: 20px
+    &_title
+        margin-bottom: 20px
+    &_form
+        display: flex
+        flex-direction: column
+    &_input
+        margin-bottom: 15px
+        border: 5px solid #b1e1fb
+        border-radius: 25px
+        line-height: 20px
+        padding: 5px 10px
+    &_btn
+        line-height: 30px
+        font-weight: 900
+        background-color: #fff135
+        border: none
+        border-radius: 25px
