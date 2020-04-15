@@ -32,11 +32,11 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
-.header {
-  background-color: #182126;
+.header {  
   background-image: url(../img/bg_header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #182126;
   padding: 100px 0 160px;
   color: #ffffff;
 }
