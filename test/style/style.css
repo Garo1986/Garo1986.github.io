@@ -348,10 +348,6 @@ html {
   display: none;
 }
 
-
-
-
-
 .form_row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -366,8 +362,6 @@ html {
 }
 
 .form_group {
-  /* -ms-flex-preferred-size: 32%;
-      flex-basis: 32%; */
       width: 370px;
 }
 
@@ -421,21 +415,46 @@ html {
   background-color: rgb(66, 169, 237);
   border: 3px solid rgb(40, 102, 144);
 }
-.navButtons {
-  background-color: #ffffff;
-  padding: 10px 90px;
-  flex-basis: 32%;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #272733;
-  font-family: 'LatoBold';
-  font-size: 15px;
-  border-radius: 3px;
+
+
+.down_btn {
+  width: 370px;
 }
-.navButtons img {
+.down_btn .btn-tertiary {
+  color:#272733;
+  padding:0;
+  line-height:47px;
+  width: 100%;
+  background-color: #ffffff;
+  margin:0;
+  display:block;
+  border: 2px solid rgb(62, 156, 220);
+  font-family: 'LatoReg', sans-serif;
+}
+.down_btn-img {
   margin-right: 18px;
+}
+.down_btn .btn-tertiary:hover,.example-2 .btn-tertiary:focus {
+  color:#888;
+  border-color:#888;
+}
+
+.down_btn .input-file {  
+  width:.1px;
+  height:.1px;
+  opacity:0;
+  overflow:hidden;
+  position:absolute;
+  z-index:-1;
+}
+.down_btn .input-file + .js-labelFile {
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  padding:0 10px;
+  cursor:pointer; 
+  text-transform: uppercase; 
+  text-align: center;
 }
 .form_send {
   text-transform: uppercase;
@@ -558,6 +577,9 @@ html {
   .form_groupRange {
     width: 100%;
     margin-bottom: 50px;
+  }
+  .down_btn {
+    margin: 0 auto;
   }
   .select-box {
     width: 100%;
@@ -719,6 +741,9 @@ html {
     width: 100%;
   }
   .form_group {
+    width: 100%;
+  }
+  .form-range_wrap, .down_btn {
     width: 100%;
   }
   .form_send {

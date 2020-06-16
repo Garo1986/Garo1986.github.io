@@ -193,7 +193,15 @@
                             </div>                            
                             <input type="range" id="fader" class="fader" min="0" max="100" value="75">
                         </div>
-                        <a href="#" class="navButtons" title="Прикрепить файл"><img src="img/Безимени-16.png">Прикрепить фаил</a>
+                        <div class="down_btn">
+                            <div class="form-group">
+                              <input type="file" name="file" id="file" class="input-file">
+                              <label for="file" class="btn btn-tertiary js-labelFile">
+                                <img class="down_btn-img" src="img/Безимени-16.png" alt="">
+                                <span class="js-fileName">прикрепить файл</span>
+                              </label>
+                            </div>
+                           </div>
                     </div>
                     <div class="form_row"><a href="#" type="submit" class="form_send">Отправить</a></div>
                 </form>
