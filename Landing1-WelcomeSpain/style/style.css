@@ -419,11 +419,11 @@ section {
 .price__subtitle {
   text-align: center;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .price__wrapper {
   position: relative;
-  height: 200px;
 }
 
 .price__line {
@@ -435,5 +435,35 @@ section {
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
+}
+
+.price__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.price__left {
+  max-width: 210px;
+  margin: 0 auto 0 300px;
+}
+
+.price__left p {
+  margin-bottom: 20px;
+}
+
+.price__right {
+  max-width: 380px;
+  margin-right: 100px;
+}
+
+.price__right p {
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */
