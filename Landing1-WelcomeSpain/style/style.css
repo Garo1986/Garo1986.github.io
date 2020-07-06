@@ -356,4 +356,14 @@ section {
   -webkit-box-shadow: 0px 0px 7px #000000;
           box-shadow: 0px 0px 7px #000000;
 }
+
+.how-work__footnote {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.how-work__btn {
+  text-align: center;
+  margin-bottom: 30px;
+}
 /*# sourceMappingURL=style.css.map */
