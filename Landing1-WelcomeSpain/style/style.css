@@ -11,8 +11,8 @@ body {
   color: #333333;
 }
 
-.disp {
-  height: 100vh;
+.offer {
+  height: 60vh;
 }
 
 .container {
@@ -34,6 +34,10 @@ section {
   margin-bottom: 20px;
 }
 
+.test {
+  display: none;
+}
+
 .btn-green a {
   margin-top: 20px;
   margin-bottom: 30px;
@@ -49,7 +53,7 @@ section {
 }
 
 .btn-green a:hover {
-  background-color: #5d5b38;
+  background-color: #67643e;
 }
 
 @font-face {
@@ -69,6 +73,10 @@ section {
 }
 
 .header {
+  height: 100vh;
+}
+
+.header__wrapper {
   background-color: #EDE8DD;
   padding: 30px 0;
 }
@@ -116,12 +124,24 @@ section {
           transform: scale(1.02);
 }
 
+.content-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .offer {
-  margin: 90px 0;
+  margin: 6% 0;
   background-image: url(../img/bg-header.jpg);
   background-repeat: no-repeat;
   background-position: right top;
-  height: 410px;
 }
 
 .offer__content {
@@ -208,5 +228,57 @@ section {
 
 .what-me__btn {
   text-align: center;
+}
+
+.what-do__item {
+  margin-bottom: 20px;
+}
+
+.what-do__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #7D7A4B;
+  font-weight: bold;
+}
+
+.what-do__head img {
+  margin-right: 25px;
+}
+
+.what-do__subdescription {
+  margin-bottom: 5px;
+}
+
+.what-do__subdescription span {
+  font-weight: bold;
+}
+
+.what-do__download {
+  background-color: #DDD5C5;
+  padding: 15px 0;
+}
+
+.what-do__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.what-do__btn-end {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.item-end {
+  margin-bottom: 35px;
 }
 /*# sourceMappingURL=style.css.map */
