@@ -414,6 +414,7 @@ section {
   margin-top: -5px;
   padding: 30px 0;
   background-color: #DDD5C5;
+  margin-bottom: 35px;
 }
 
 .price__subtitle {
@@ -464,6 +465,40 @@ section {
 }
 
 .price__right p {
+  margin-bottom: 20px;
+}
+
+.price__btn {
+  text-align: center;
+}
+
+.team__subtitle {
+  margin-bottom: 20px;
+  letter-spacing: 7%;
+  max-width: 1100px;
+}
+
+.team__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.team__img {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+}
+
+.team__description {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+.team__description p {
   margin-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */
