@@ -489,16 +489,24 @@ section {
 }
 
 .team__img {
-  -ms-flex-preferred-size: 33%;
-      flex-basis: 33%;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
 }
 
 .team__description {
-  -ms-flex-preferred-size: 60%;
-      flex-basis: 60%;
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
 }
 
 .team__description p {
   margin-bottom: 20px;
+}
+
+.team__btn {
+  text-align: center;
+}
+
+.team-jose {
+  margin-bottom: 35px;
 }
 /*# sourceMappingURL=style.css.map */
