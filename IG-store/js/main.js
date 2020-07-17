@@ -6,9 +6,9 @@ $('.header__btn').on('click', function(e) {
   })
 $('.main').on('click', function(e) {
     e.preventDefault();
-    $('.header').toggleClass('header__active');
-    $('.header__menu').toggleClass('menu__active');
-    $('.main').toggleClass('main__active');
+    $('.header').removeClass('header__active');
+    $('.header__menu').removeClass('menu__active');
+    $('.main').removeClass('main__active');
   })
 //   $('.card__link-favorites').on('click', function (e) {
 //     e.preventDefault();

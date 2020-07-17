@@ -75,8 +75,8 @@ body {
 }
 
 .header__active {
-  -webkit-transform: translateX(105px);
-          transform: translateX(105px);
+  -webkit-transform: translateX(18%);
+          transform: translateX(18%);
 }
 
 .main__active {
