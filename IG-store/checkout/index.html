@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="../style/reset.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <div class="header__logo"><a href="/"><img src="../img/logo.svg" alt=""></a>  </div>
+                <div class="header__link">
+                    <a href="#" class="header__search"><img src="../img/search.svg" alt=""></a>
+                    <a href="#" class="header__burger"><img src="../img/basket-burger.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+         <div class="checkout-contact__title">Оформление заказа</div>
+        <section class="checkout-contact">
+           
+            <div class="container">
+                <div class="checkout-contact__wrap">
+                    <div class="checkout-contact__contact-inform">
+                        <div class="contact-form__title checkout__title"><img src="../img/contact-form.svg" alt="">Контактная информация</div>
+                        <form class="checkout__form" action="#">
+                            <input class="form__name" type="text" name="name" placeholder="Иванов Иван Иванович">
+                            <div class="form__contact">
+                                <input class="form__phone" name="phone" type="tel" placeholder="+7 999 999 99 99">
+                                <input class="form__email" name="email" type="email" placeholder="ivanov@mail.ru">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="checkout-delivery">
+            <div class="container">
+                 <div class="checkout-delivery__wrap">
+                    <div class="checkout-delivery__title checkout__title"><img src="../img/location.svg" alt="">Способ доставки</div>
+                    <div class="checkout-delivery__select">
+                        <select class="chechout-delivery__list">
+                            <option class="options">Курьер по Москве (до МКАД)</option>
+                            <option class="options">Курьер по МО (до 15км)</option>
+                            <option class="options">Самовывоз</option>
+                            <option class="options">Почтой</option>
+                        </select>
+                    </div>
+                </div>
+            </div>           
+        </section>
+        <!-- /.checkout-delivery -->
+
+
+        <section class="pay-order">
+            <div class="container">
+                <div class="pay-order__wrap">
+                    <div class="pay-order__amount">
+                        <div class="pay-order__quantity">2 шт.</div>
+                        <!-- /.pay-order__quantity -->
+                        <div class="pay-order__price">7 180 &#8381;</div>
+                        <!-- /.pay-order__price -->
+                    </div>
+                    <!-- /.pay-order__amount -->
+                </div>
+                <!-- /.pay-order__wrap -->
+                <a class="pay-order__btn">Подтвердить заказ</a>
+                
+            </div>
+        </section>
+
+        <!-- блок спасибо -->
+
+        <section id="thank" class="thank">
+            <div class="container">
+                <div class="thank__wrap">
+                    <div class="thank__order">
+                        <div class="thank__img">
+                            <img src="../img/thank-hand.svg" alt="">
+                        </div>
+                        <div class="thank__number">
+                            <p class="thank__desc-number">Спасибо за Ваш заказ!</p>
+                            <p class="thank__digit">№222222</p>
+                        </div>
+                        <div class="thank__operator">
+                            <p>Оператор свяжется с Вами для уточнения деталей заказа в 13:00 (по МСК)</p>
+                        </div>
+                        
+                    </div>
+                    <a href="/" class="thank__btn">Перейти в каталог</a>
+                </div>
+            </div>
+            <div class="interest">
+                <div class="container">
+                                   <div class="interest__title">Вас также может заинтересовать</div>
+ 
+                </div>
+                <span class="interest__line"></span>
+                <div class="container">
+                    <div class="interest__wrap">
+                        <div class="interest__item">                            
+                            <div class="interest__card">
+                                <div class="interest__img">
+                                   <div class="interest__sale">15%</div>
+                                   <img src="../img/interest-foto-1.png" alt=""> 
+                                </div>
+                                <div class="interest__subtitle">
+                                    «Умная» мойка воздуха MIE Primavera
+                                </div>
+                                <div class="interest__buy">
+                                    <div class="interest__price">26 390 &#8381;</div>
+                                    <div class="interest__card-btn">
+                                        <a href="#"> <img class="interest__truck" src="../img/truck.svg" alt=""> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="interest__item">
+                            <div class="interest__card">
+                                <div class="interest__img">
+                                   <!-- <div class="interest__sale">15%</div> -->
+                                   <img src="../img/interest-foto-2.png" alt=""> 
+                                </div>
+                                <div class="interest__subtitle">
+                                    <p>Многофункциона<wbr>льная яйцеварка CASO ED10</p>                                    
+                                </div>
+                                <div class="interest__buy">
+                                    <div class="interest__price">3 999 &#8381;</div>
+                                    <div class="interest__card-btn">
+                                        <a href="#"> <img class="interest__truck" src="../img/truck.svg" alt=""> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="interest__item">
+                            <div class="interest__card">
+                                <div class="interest__img">
+                                   <!-- <div class="interest__sale">15%</div> -->
+                                   <img src="../img/interest-foto-3.png" alt=""> 
+                                </div>
+                                <div class="interest__subtitle">
+                                    Капучинатор CASO Crema Latte & Choco
+                                </div>
+                                <div class="interest__buy">
+                                    <div class="interest__price">7 690 &#8381;</div>
+                                    <div class="interest__card-btn">
+                                        <a href="#"> <img class="interest__truck" src="../img/truck.svg" alt=""> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.thank -->
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

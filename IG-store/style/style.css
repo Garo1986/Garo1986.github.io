@@ -1,0 +1,393 @@
+@font-face {
+  font-family: 'SF UI Display';
+  src: url("../fonts/SFUIDisplay-Regular.eot");
+  src: local("SF UI Display Regular"), local("SFUIDisplay-Regular"), url("../fonts/SFUIDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIDisplay-Regular.woff2") format("woff2"), url("../fonts/SFUIDisplay-Regular.woff") format("woff"), url("../fonts/SFUIDisplay-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF UI Display';
+  src: url("../fonts/SFUIDisplay-Medium.eot");
+  src: local("SF UI Display Medium"), local("SFUIDisplay-Medium"), url("../fonts/SFUIDisplay-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIDisplay-Medium.woff2") format("woff2"), url("../fonts/SFUIDisplay-Medium.woff") format("woff"), url("../fonts/SFUIDisplay-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF UI Display';
+  src: url("../fonts/SFUIDisplay-Bold.eot");
+  src: local("SF UI Display Bold"), local("SFUIDisplay-Bold"), url("../fonts/SFUIDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIDisplay-Bold.woff2") format("woff2"), url("../fonts/SFUIDisplay-Bold.woff") format("woff"), url("../fonts/SFUIDisplay-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF UI Display';
+  src: url("../fonts/SFUIDisplay-Light.eot");
+  src: url("../fonts/SFUIDisplay-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIDisplay-Light.woff2") format("woff2"), url("../fonts/SFUIDisplay-Light.woff") format("woff"), url("../fonts/SFUIDisplay-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF UI Display';
+  src: url("../fonts/SFUIDisplay-Semibold.eot");
+  src: url("../fonts/SFUIDisplay-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIDisplay-Semibold.woff2") format("woff2"), url("../fonts/SFUIDisplay-Semibold.woff") format("woff"), url("../fonts/SFUIDisplay-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: 'SF UI Display', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.85);
+  min-width: 320px;
+  overflow-x: hidden;
+  background-color: #F5F5F5;
+}
+
+.container {
+  padding: 0 17px;
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.main {
+  margin-top: 15%;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.header__active {
+  -webkit-transform: translateX(105px);
+          transform: translateX(105px);
+}
+
+.main__active {
+  -webkit-transform: translateX(215px);
+          transform: translateX(215px);
+}
+
+section {
+  padding: 30px 0;
+}
+
+.btn__orange a {
+  background-color: #FF601F;
+}
+
+.btn__green a {
+  background-color: #4f9346;
+}
+
+.btn__red a {
+  background-color: #ff1f01;
+}
+
+.btn__blue a {
+  background-color: #0a91e6;
+}
+
+.btn__black a {
+  background-color: #000000;
+}
+
+.background__nature {
+  background-image: url("../img/1may_backgr.jpg");
+}
+
+.background__orange {
+  background-image: url("../img/background-category-orange_0.jpg");
+}
+
+.background__blue {
+  background-image: url("../img/background-category-blue-purple.jpg");
+}
+
+.background__purple {
+  background-image: url("../img/background-category-blue-purple_1.jpg");
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+  padding-top: 19px;
+  padding-bottom: 16px;
+  background-color: #ffffff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.header__top-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__menu {
+  position: absolute;
+  overflow: scroll;
+  top: 0;
+  left: -218px;
+  width: 218px;
+  height: 100vh;
+  background: #ffffff;
+  -webkit-box-shadow: inset -2px 0px 7px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: inset -2px 0px 7px 0px rgba(0, 0, 0, 0.2);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.menu-inner__account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 0 15px 22px;
+  border-bottom: 1px solid #EBEBEB;
+  text-decoration: none;
+  color: #000000;
+}
+
+.menu-inner__img {
+  margin-right: 7px;
+}
+
+.menu-inner__name {
+  margin-bottom: 5px;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.menu-inner__point {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.menu-inner__point img {
+  margin: 0 7px;
+}
+
+.menu-inner__best {
+  padding: 15px 17px 15px 22px;
+  border-bottom: 1px solid #EBEBEB;
+}
+
+.menu-inner__nav {
+  border-bottom: 1px solid #EBEBEB;
+}
+
+.menu-item__link {
+  margin-bottom: 16px;
+}
+
+.menu-item__link:last-child {
+  margin-bottom: 0;
+}
+
+.menu-item__link a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-size: 13px;
+  color: #000000;
+  font-weight: 300;
+}
+
+.menu-item__link a img {
+  margin-right: 4.22px;
+}
+
+.nav__link {
+  padding: 15px 17px 15px 22px;
+  border-bottom: 1px solid #EBEBEB;
+}
+
+.nav__link a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 300;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__active {
+  left: -105px;
+}
+
+.offer__images {
+  text-align: center;
+}
+
+.offer__link img {
+  border-radius: 6px;
+}
+
+.products {
+  background-position: center;
+}
+
+.products__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 13px;
+}
+
+.products__desc {
+  color: #000000;
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
+}
+
+.products__desc h3 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.products__desc h3 a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.products__desc p {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.products__btn {
+  -ms-flex-preferred-size: 29%;
+      flex-basis: 29%;
+}
+
+.products__btn a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 7px 40px 7px 10px;
+}
+
+.products__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.products__card {
+  padding: 2px;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.products__content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8% 4px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.products__content-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9998;
+}
+
+.products__img {
+  max-width: 70%;
+  margin: 0 auto;
+  margin-bottom: 17px;
+}
+
+.products__content-desc {
+  text-align: center;
+  font-size: 8.5px;
+  font-weight: 100;
+  margin: 0 auto 32px;
+}
+
+.products-price {
+  margin: 0 auto;
+}
+
+.products__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-size: 8.5px;
+}
+
+.products__card-btn {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  z-index: 9999;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="../style/reset.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <div class="header__logo"><a href="/"><img src="../img/logo.svg" alt=""></a>  </div>
+                <div class="header__link">
+                    <a href="#" class="header__search"><img src="../img/search.svg" alt=""></a>
+                    <a href="#" class="header__burger"><img src="../img/basket-burger.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="basket">
+            <div class="basket__title">Корзина</div>
+            <div class="container">
+                <div class="basket__wrap">
+                    <div class="basket__card">
+                        <div class="card__top">
+                            <div class="card__check">
+                                <input id="check" type="checkbox" name="check" value="check" checked>
+                                <label for="check"></label>
+                            </div>
+                            <div class="card__img"><img src="../img/basket-lamp.jpg" alt=""></div>
+                            <div class="card__desc">
+                                <div class="card__title">«Умная» лампа Life&nbsp;Control</div>
+                                <div class="card__subtitle">
+                                    <div class="card__price"><span>1&nbsp;190 </span>&#8381;</div>
+                                    <div class="card__points">+<span>37 </span>iG баллов</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__bottom">
+                            <div class="card__favorites"><a class="card__link-favorites" href="#"><svg class="card__link-fill" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.699 2.39739C12.0461 1.59143 13.1889 1.59143 13.536 2.39739L15.5523 7.07958C15.6971 7.41575 16.014 7.64597 16.3784 7.67977L21.4545 8.15057C22.3283 8.23161 22.6814 9.31842 22.0222 9.89757L18.1922 13.2621C17.9172 13.5037 17.7962 13.8762 17.8767 14.2333L18.9975 19.2064C19.1905 20.0625 18.266 20.7341 17.5114 20.2861L13.1281 17.6833C12.8133 17.4965 12.4217 17.4965 12.1069 17.6833L7.72355 20.2861C6.96902 20.7341 6.04452 20.0625 6.23746 19.2064L7.35831 14.2333C7.43879 13.8762 7.31775 13.5037 7.04277 13.2621L3.21283 9.89757C2.55357 9.31842 2.9067 8.23161 3.78047 8.15057L8.85658 7.67977C9.22104 7.64597 9.53791 7.41575 9.68269 7.07958L11.699 2.39739Z" stroke="black"/>
+                                <path d="M10.1914 11.7246L14.9038 11.7246" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.5479 9.36816V14.0806" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>В избранное</a></div>
+                            <div class="card__remove"><a href="#"><img src="../img/card-remove.svg" alt="">Удалить</a></div>
+                            <div class="card__quantity">
+                                <button class="card__minus minus" href="#">-</button>
+                                <span>1</span>
+                                <button class="card__plus plus" href="#">+</button>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="basket__card">
+                        <div class="card__top">
+                            <div class="card__check">
+                                <input id="check1" type="checkbox" name="check" value="check1" checked>
+                                <label for="check1"></label>
+                            </div>
+                            <div class="card__img"><img src="../img/pill-box.jpg" alt=""></div>
+                            <div class="card__desc">
+                                <div class="card__title">Алюминиевая таблетница Mbarc</div>
+                                <div class="card__subtitle">
+                                    <div class="card__price"><span>5 990 </span>&#8381;</div>
+                                    <div class="card__points">+<span>204 </span>iG баллов</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__bottom">
+                            <div class="card__favorites"><a class="card__link-favorites" href="#"><svg class="card__link-fill" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.699 2.39739C12.0461 1.59143 13.1889 1.59143 13.536 2.39739L15.5523 7.07958C15.6971 7.41575 16.014 7.64597 16.3784 7.67977L21.4545 8.15057C22.3283 8.23161 22.6814 9.31842 22.0222 9.89757L18.1922 13.2621C17.9172 13.5037 17.7962 13.8762 17.8767 14.2333L18.9975 19.2064C19.1905 20.0625 18.266 20.7341 17.5114 20.2861L13.1281 17.6833C12.8133 17.4965 12.4217 17.4965 12.1069 17.6833L7.72355 20.2861C6.96902 20.7341 6.04452 20.0625 6.23746 19.2064L7.35831 14.2333C7.43879 13.8762 7.31775 13.5037 7.04277 13.2621L3.21283 9.89757C2.55357 9.31842 2.9067 8.23161 3.78047 8.15057L8.85658 7.67977C9.22104 7.64597 9.53791 7.41575 9.68269 7.07958L11.699 2.39739Z" stroke="black"/>
+                                <path d="M10.1914 11.7246L14.9038 11.7246" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.5479 9.36816V14.0806" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>В избранное</a></div>
+                            <div class="card__remove"><a href="#"><img src="../img/card-remove.svg" alt="">Удалить</a></div>
+                            <div class="card__quantity">
+                                <button class="card__minus" href="#">-</button>
+                                <span>1</span>
+                                <button class="card__plus" href="#">+</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pay-order">
+            <div class="container">
+                <div class="pay-order__wrap">
+                    <div class="pay-order__amount">
+                        <div class="pay-order__quantity">2 шт.</div>
+                        <!-- /.pay-order__quantity -->
+                        <div class="pay-order__price">7 180 &#8381;</div>
+                        <!-- /.pay-order__price -->
+                    </div>
+                    <!-- /.pay-order__amount -->
+                </div>
+                <!-- /.pay-order__wrap -->
+                <a class="pay-order__btn">Продолжить</a>                
+            </div>
+        </section>
+        <div class="interest">
+            <div class="interest__title">Вас также может заинтересовать</div>
+            <span class="interest__line"></span>
+            <div class="container">
+                <div class="interest__wrap">
+                    <div class="interest__item">                            
+                        <div class="interest__card">
+                            <div class="interest__img">
+                               <div class="interest__sale">15%</div>
+                               <img src="../img/interest-foto-1.png" alt=""> 
+                            </div>
+                            <div class="interest__subtitle">
+                                «Умная» мойка воздуха MIE Primavera
+                            </div>
+                            <div class="interest__buy">
+                                <div class="interest__price">26 390 &#8381;</div>
+                                <div class="interest__card-btn">
+                                    <a href="#"> <img class="interest__truck" src="../img/truck.svg" alt=""> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="interest__item">
+                        <div class="interest__card">
+                            <div class="interest__img">
+                               <!-- <div class="interest__sale">15%</div> -->
+                               <img src="../img/interest-foto-2.png" alt=""> 
+                            </div>
+                            <div class="interest__subtitle">
+                                <p>Многофункциона<wbr>льная яйцеварка CASO ED10</p>                                    
+                            </div>
+                            <div class="interest__buy">
+                                <div class="interest__price">3 999 &#8381;</div>
+                                <div class="interest__card-btn">
+                                    <a href="#"> <img class="interest__truck" src="../img/truck.svg" alt=""> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="interest__item">
+                        <div class="interest__card">
+                            <div class="interest__img">
+                               <!-- <div class="interest__sale">15%</div> -->
+                               <img src="../img/interest-foto-3.png" alt=""> 
+                            </div>
+                            <div class="interest__subtitle">
+                                Капучинатор CASO Crema Latte & Choco
+                            </div>
+                            <div class="interest__buy">
+                                <div class="interest__price">7 690 &#8381;</div>
+                                <div class="interest__card-btn">
+                                    <a href="#"> <img class="interest__truck" src="../img/truck.svg" alt=""> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

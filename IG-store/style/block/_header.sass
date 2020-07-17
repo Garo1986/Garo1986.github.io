@@ -1,0 +1,84 @@
+.header
+    position: fixed
+    width: 100%
+    z-index: 999
+    top: 0
+    padding-top: 19px
+    padding-bottom: 16px
+    background-color: #ffffff
+    transition: .3s
+    &__top-menu        
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__menu
+        position: absolute
+        overflow: scroll
+        top: 0
+        left: -218px
+        width: 218px
+        height: 100vh
+        background: #ffffff
+        box-shadow: inset -2px 0px 7px 0px rgba(0, 0, 0, 0.2)
+        transition: .3s
+.menu-inner
+    &__wrap
+        // display: flex
+        // flex-direction: column
+    &__account
+        display: flex
+        padding: 15px 0 15px 22px
+        border-bottom: 1px solid #EBEBEB
+        text-decoration: none
+        color: #000000
+    &__img
+        margin-right: 7px
+    &__name
+        margin-bottom: 5px
+        font-size: 13px
+        font-weight: 300
+    &__point
+        display: flex
+        align-items: center
+        font-size: 14px
+        font-weight: 500
+        img
+            margin: 0 7px
+    &__best
+        padding: 15px 17px 15px 22px
+        border-bottom: 1px solid #EBEBEB
+    &__nav
+        border-bottom: 1px solid #EBEBEB
+
+.menu-item
+    &__link
+        margin-bottom: 16px
+        &:last-child
+            margin-bottom: 0
+        a
+            display: flex
+            align-items: center
+            text-decoration: none
+            font-size: 13px
+            color: #000000
+            font-weight: 300
+            
+            img
+                margin-right: 4.22px
+        
+.nav
+    &__list
+
+    &__link
+        padding: 15px 17px 15px 22px
+        border-bottom: 1px solid #EBEBEB
+        a
+            text-decoration: none
+            color: #000000
+            font-weight: 300
+            font-size: 14px
+            display: flex
+            justify-content: space-between
+            align-items: center
+.menu__active
+    left: -105px 

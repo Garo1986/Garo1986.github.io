@@ -1,0 +1,63 @@
+@import 'fonts' 
+    
+html
+    box-sizing: border-box
+*,
+*::after,
+*::before 
+    box-sizing: inherit   
+body
+    font-family: 'SF UI Display', sans-serif
+    font-weight: normal
+    font-size: 16px
+    color: rgba(0, 0, 0, 0.85)
+    min-width: 320px
+    overflow-x: hidden
+    background-color: #F5F5F5
+    
+.container
+    padding: 0 17px
+    max-width: 375px
+    margin: 0 auto
+.main
+    margin-top: 15%
+    transition: .3s
+.header__active
+    transform: translateX(105px)
+ 
+.main__active
+    transform: translateX(215px)
+section
+    // margin-bottom: 10px
+    padding: 30px 0
+.btn
+    &__orange
+        a
+            background-color: #FF601F
+    &__green
+        a
+            background-color: #4f9346
+    &__red
+        a
+            background-color: #ff1f01
+    &__blue
+        a
+            background-color: #0a91e6
+    &__black
+        a
+            background-color: #000000
+.background
+    &__nature
+        background-image: url('../img/1may_backgr.jpg')
+    &__orange
+        background-image: url('../img/background-category-orange_0.jpg')
+    &__blue
+        background-image: url('../img/background-category-blue-purple.jpg')
+    &__purple
+        background-image: url('../img/background-category-blue-purple_1.jpg')
+
+
+
+@import 'block/header'
+@import 'block/offer'
+@import 'block/products'

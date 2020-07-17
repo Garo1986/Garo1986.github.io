@@ -1,0 +1,444 @@
+@font-face {
+  font-family: 'SF UI Display';
+  src: url("../fonts/SFUIDisplay-Regular.eot");
+  src: local("SF UI Display Regular"), local("SFUIDisplay-Regular"), url("../fonts/SFUIDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIDisplay-Regular.woff2") format("woff2"), url("../fonts/SFUIDisplay-Regular.woff") format("woff"), url("../fonts/SFUIDisplay-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF UI Display';
+  src: url("../fonts/SFUIDisplay-Medium.eot");
+  src: local("SF UI Display Medium"), local("SFUIDisplay-Medium"), url("../fonts/SFUIDisplay-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIDisplay-Medium.woff2") format("woff2"), url("../fonts/SFUIDisplay-Medium.woff") format("woff"), url("../fonts/SFUIDisplay-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF UI Display';
+  src: url("../fonts/SFUIDisplay-Bold.eot");
+  src: local("SF UI Display Bold"), local("SFUIDisplay-Bold"), url("../fonts/SFUIDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIDisplay-Bold.woff2") format("woff2"), url("../fonts/SFUIDisplay-Bold.woff") format("woff"), url("../fonts/SFUIDisplay-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF UI Display';
+  src: url("../fonts/SFUIDisplay-Light.eot");
+  src: url("../fonts/SFUIDisplay-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIDisplay-Light.woff2") format("woff2"), url("../fonts/SFUIDisplay-Light.woff") format("woff"), url("../fonts/SFUIDisplay-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF UI Display';
+  src: url("../fonts/SFUIDisplay-Semibold.eot");
+  src: url("../fonts/SFUIDisplay-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIDisplay-Semibold.woff2") format("woff2"), url("../fonts/SFUIDisplay-Semibold.woff") format("woff"), url("../fonts/SFUIDisplay-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: 'SF UI Display', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #000000;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+.container {
+  padding-left: 7px;
+  padding-right: 7px;
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #ffffff;
+}
+
+.header__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px 11px;
+}
+
+.header__search {
+  margin-right: 22.44px;
+}
+
+.basket__title {
+  padding: 10px 0;
+  background-color: #F6F6F6;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.basket__wrap {
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.basket__card {
+  padding: 8px 13px 8px 8.5px;
+  border: 1px solid #E1E1E1;
+  border-radius: 13px;
+  margin-bottom: 8.39px;
+}
+
+.basket__card:last-child {
+  margin-bottom: 130px;
+}
+
+.card__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__check {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.card__check img {
+  margin-right: 5.24px;
+}
+
+.card__check label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  position: relative;
+  width: 24.25px;
+  height: 24.25px;
+  border: 0.5px solid #C4C4C4;
+  border-radius: 50%;
+}
+
+.card__check label::before {
+  border-radius: 50%;
+}
+
+.card__check input[type=checkbox] {
+  display: none;
+}
+
+.card__check input[type=checkbox]:checked + label {
+  border: none;
+}
+
+.card__check input[type=checkbox]:checked + label:before {
+  content: url("../../img/checkbox-check.svg");
+  background-color: #FF361B;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__img img {
+  margin-right: 23.6px;
+}
+
+.card__desc {
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+}
+
+.card__title {
+  max-width: 160px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.card__subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card__points {
+  font-size: 14px;
+  color: #ff361b;
+}
+
+.card__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__favorites a, .card__remove a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+}
+
+.card__favorites a svg, .card__remove a svg {
+  margin-right: 8px;
+}
+
+.card__quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__quantity button {
+  background-color: transparent;
+  width: 19px;
+  height: 19px;
+  border-radius: 4.69px;
+  outline: none;
+  cursor: pointer;
+}
+
+.card__quantity span {
+  margin: 0 5.61px;
+}
+
+.card__minus {
+  border: 0.703499px solid #D4D4D4;
+  color: #D4D4D4;
+}
+
+.card__plus {
+  border: 0.703499px solid #000000;
+}
+
+.pay-order {
+  margin-bottom: 61px;
+}
+
+.pay-order__wrap {
+  padding-left: 18px;
+  padding-right: 13px;
+  margin-bottom: 22px;
+}
+
+.pay-order__amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pay-order__quantity {
+  font-size: 14px;
+}
+
+.pay-order__price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.pay-order__btn {
+  font-size: 17px;
+  color: #ffffff;
+  background-color: #FF361B;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.interest__title {
+  padding-left: 23px;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.interest__line {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 0.5px;
+  background-color: #AFAFAF;
+  margin-bottom: 20px;
+}
+
+.interest__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.interest__item {
+  -ms-flex-preferred-size: 33.3333%;
+      flex-basis: 33.3333%;
+  padding: 4px;
+  max-width: 125px;
+  margin-bottom: 20px;
+}
+
+.interest__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2px;
+  border: 0.5px solid #AFAFAF;
+  border-radius: 4px;
+  height: 100%;
+  text-decoration: none;
+}
+
+.interest__img {
+  position: relative;
+}
+
+.interest__sale {
+  background-image: url("../../img/sale-star.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 31.12px;
+  height: 31.12px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 10.72px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.interest__subtitle {
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 27px;
+}
+
+.interest__price {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.interest__buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+}
+
+.interest__card-btn {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+/*# sourceMappingURL=style.css.map */
