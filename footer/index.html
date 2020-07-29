@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="execution">
+        <div class="container">
+            <div class="execution__title">Оформление заказа</div>            
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="execution-wrap">
+                        <div class="row">
+                            <div class="col-md-12 col-xl-6">
+                                <div class="way-delivery">
+                                    <div class="way-delivery__title"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0)">
+                                        <path d="M10.8047 0.771484C6.92766 0.771484 3.77344 3.9257 3.77344 7.80273C3.77344 9.11266 4.13629 10.391 4.82301 11.5001L10.4045 20.4945C10.5114 20.6668 10.6997 20.7715 10.9023 20.7715C10.9039 20.7715 10.9054 20.7715 10.907 20.7715C11.1113 20.7699 11.3 20.662 11.405 20.4866L16.8442 11.4051C17.493 10.3195 17.8359 9.07379 17.8359 7.80273C17.8359 3.9257 14.6817 0.771484 10.8047 0.771484ZM15.8385 10.8034L10.8934 19.06L5.81902 10.8827C5.24742 9.95953 4.9375 8.89453 4.9375 7.80273C4.9375 4.57188 7.57383 1.93555 10.8047 1.93555C14.0355 1.93555 16.668 4.57188 16.668 7.80273C16.668 8.86215 16.3785 9.89992 15.8385 10.8034Z" fill="#FF361B"></path>
+                                        <path d="M10.8047 4.28711C8.86617 4.28711 7.28906 5.86422 7.28906 7.80273C7.28906 9.72887 8.84051 11.3184 10.8047 11.3184C12.7931 11.3184 14.3203 9.7077 14.3203 7.80273C14.3203 5.86422 12.7432 4.28711 10.8047 4.28711ZM10.8047 10.1543C9.50559 10.1543 8.45313 9.09832 8.45313 7.80273C8.45313 6.51039 9.51234 5.45117 10.8047 5.45117C12.097 5.45117 13.1523 6.51039 13.1523 7.80273C13.1523 9.07941 12.1244 10.1543 10.8047 10.1543Z" fill="#FF361B"></path>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0">
+                                        <rect width="20" height="20" fill="white" transform="translate(0.804688 0.771484)"></rect>
+                                        </clipPath>
+                                        </defs>
+                                        </svg> Способ доставки
+                                    </div>
+                                    <div class="way-delivery__checkbox">
+                                        <div class="way-delivery__checkbox-item">
+                                            <div class="card__check">
+                                                <input id="check" type="radio" name="check1" value="1" checked="">
+                                                <label for="check"></label> <span>Курьер по Москве<br> (до МКАД)</span> 
+                                             </div>
+                                        </div>
+                                        <div class="way-delivery__checkbox-item">
+                                            <div class="card__check">
+                                                <input id="check1" type="radio" name="check1" value="2">
+                                                <label for="check1"></label><span>Курьер по Москве<br> (за МКАД не более 10 км)</span> 
+                                            </div>
+                                        </div>
+                                        <div class="way-delivery__checkbox-item">
+                                            <div class="card__check">
+                                                <input id="check2" type="radio" name="check1" value="3">
+                                                <label for="check2"></label><span>Доставка по РФ</span>
+                                            </div>
+                                        </div>
+                                        <div class="way-delivery__checkbox-item">
+                                            <div class="card__check">
+                                                <input id="check3" type="radio" name="check1" value="4">
+                                                <label for="check3"></label><span>Доставка по СНГ</span>
+                                            </div>
+                                        </div>
+                                        <div class="way-delivery__checkbox-item">
+                                            <div class="card__check">
+                                                <input id="check4" type="radio" name="check1" value="5">
+                                                <label for="check4"></label><span>Самовывоз</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="way-pay">
+                                    <div class="way-pay__title">
+                                        <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="9.85376" cy="10.0393" r="8.92172" stroke="#FF361B" stroke-width="1.2"></circle>
+                                            <path d="M8.94617 10.4482H10.5797C11.2947 10.4482 11.8415 10.2659 12.2203 9.90136C12.5802 9.55099 12.7601 9.05856 12.7601 8.42409C12.7601 7.79436 12.5802 7.30667 12.2203 6.96102C11.8463 6.59644 11.2994 6.41415 10.5797 6.41415H8.94617V10.4482ZM8.94617 13.8928V15.5264H7.66776V13.8928H6.24731V12.9269H7.66776V11.5562H6.24731V10.4482H7.66776V5.27778H10.9135C11.8605 5.27778 12.6275 5.57845 13.2146 6.17977C13.7876 6.76216 14.074 7.51027 14.074 8.42409C14.074 9.33792 13.7852 10.086 13.2075 10.6684C12.6204 11.2603 11.851 11.5562 10.8993 11.5562H8.94617V12.9269H11.8936V13.8928H8.94617Z" fill="#FF361B"></path>
+                                            </svg> Способ оплаты
+                                    </div>
+                                    <div class="way-delivery__checkbox">
+                                        <div class="way-delivery__checkbox-item">
+                                            <div class="card__check align-items-start">
+                                                <input id="check5" type="radio" class="checkbox-pay" name="check" value="check" checked="">
+                                                <label for="check5"></label><span>Онлайн</span>                                                
+                                            </div>
+                                            <img class="way-pay-img" src="img/way-pay-img.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="way-delivery__checkbox">
+                                        <div class="way-delivery__checkbox-items">
+                                            <div class="card__check align-items-start">
+                                                <input id="check6" type="radio" class="checkbox-pay" name="check" value="check">
+                                                <label for="check6"></label><span>При получении</span>
+                                            </div>
+                                            <div class="way-delivery__desc">Наличными, картой, по СМС или в личном кабинете на сайте</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bonus-account">
+                                    <div class="bonus-account__title">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.747 2.43616C11.3051 1.79369 12.3026 1.79369 12.8608 2.43616L13.5744 3.25765C14.1628 3.93491 15.0587 4.261 15.9448 4.12038L17.0195 3.94981C17.86 3.81641 18.6241 4.45759 18.6387 5.30851L18.6574 6.39654C18.6728 7.29354 19.1495 8.11924 19.9186 8.58105L20.8515 9.14121C21.5812 9.5793 21.7544 10.5617 21.2186 11.2229L20.5335 12.0683C19.9687 12.7654 19.8031 13.7043 20.0955 14.5525L20.4501 15.5813C20.7274 16.3858 20.2287 17.2497 19.3932 17.4118L18.3249 17.6191C17.4442 17.79 16.7139 18.4029 16.3926 19.2405L16.003 20.2566C15.6983 21.0512 14.7609 21.3923 14.0167 20.9795L13.0651 20.4516C12.2806 20.0165 11.3272 20.0165 10.5427 20.4516L9.59108 20.9795C8.84687 21.3923 7.90952 21.0512 7.60478 20.2566L7.21513 19.2405C6.8939 18.4029 6.16352 17.79 5.28282 17.6191L4.21456 17.4118C3.3791 17.2497 2.88035 16.3858 3.15768 15.5813L3.51228 14.5525C3.80463 13.7043 3.63907 12.7654 3.07427 12.0683L2.38918 11.2229C1.85339 10.5616 2.0266 9.5793 2.75623 9.14121L3.68917 8.58105C4.4583 8.11924 4.93502 7.29354 4.95039 6.39654L4.96904 5.30851C4.98362 4.45759 5.74775 3.81641 6.58828 3.94981L7.66302 4.12038C8.54906 4.261 9.44499 3.93491 10.0333 3.25765L10.747 2.43616Z" stroke="#FF361B" stroke-width="1.2"></path>
+                                            <path d="M7.56893 12.041H6.6123V15.0347H7.56893V12.041Z" fill="#FF361B"></path>
+                                            <path d="M7.09149 11.3301C7.45434 11.3301 7.73473 11.049 7.73473 10.6851C7.73473 10.3212 7.45434 10.04 7.09149 10.04C6.72863 10.04 6.44824 10.3212 6.44824 10.6851C6.44824 11.049 6.72863 11.3301 7.09149 11.3301Z" fill="#FF361B"></path>
+                                            <path d="M16.5249 8.94829L15.6343 9.51064C15.6343 9.51064 14.8591 8.41903 13.3912 8.31979C13.3912 8.31979 11.3955 8.0717 10.2739 9.80835C10.2739 9.80835 9.43275 11.0654 9.8121 12.7358C9.8121 12.7358 10.3234 15.1506 12.7809 15.3491C12.7809 15.3491 14.2818 15.5972 15.4529 14.3733C15.4694 14.3567 15.4529 13.1824 15.4529 13.1824H12.4511V12.2066H16.5414V14.8529C16.5414 14.8529 15.3209 16.4076 13.0283 16.3415C13.0283 16.3415 10.8842 16.4572 9.44924 14.5387C9.44924 14.5387 8.806 13.6951 8.65756 12.5705C8.65756 12.5705 8.14626 9.77527 10.3894 8.10478C10.3894 8.10478 11.8573 6.88085 14.1499 7.41012C14.1499 7.4432 15.4364 7.64167 16.5249 8.94829Z" fill="#FF361B"></path>
+                                            </svg>Бонусный счёт <div class="bonus-account__balls">999 iG баллов</div>
+                                    </div>
+                                    <div class="bonus-account__wrap-btn row">
+                                        <div class="col-6">
+                                            <button class="bonus-account__btn save-btn">Накопить</button>
+                                            <!-- <a href="#">Накопить</a> -->
+                                        </div>
+                                        <div class="col-6">
+                                            <button class="bonus-account__btn spend-btn">Потратить</button>
+                                        </div>
+                                    </div>
+                                    <div class="bonus-account__accrue">
+                                        За этот заказ вам будет начислено: <span>241 iG-баллов</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-12 col-xl-6">
+                                <div class="contact-information">
+                                    <div class="contact-information__title"><svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.6097 5.84362C12.479 6.98482 12.1677 8.19967 11.5812 9.11313C11.0106 10.002 10.1952 10.591 8.98517 10.591C7.77514 10.5911 6.95989 10.0022 6.38923 9.11329C5.80277 8.19977 5.49152 6.98482 5.36069 5.84358C5.20451 4.48081 5.45788 3.36409 6.03892 2.60128C6.60778 1.85444 7.55569 1.36145 8.9852 1.36145C10.4149 1.36145 11.3627 1.85448 11.9315 2.6013C12.5125 3.36414 12.7657 4.48088 12.6097 5.84362Z" stroke="#FF361B" stroke-width="1.11743"></path>
+                                        <path d="M8.98566 12.1348C7.65978 12.1348 6.52094 11.6337 5.64764 10.6758C5.38886 10.8126 5.11314 10.9327 4.80536 11.0536C4.17296 11.3021 3.45764 11.4373 2.90526 11.8496C1.95001 12.5626 1.70314 14.1665 1.50918 15.2606C1.3491 16.1637 1.24156 17.0854 1.21017 18.0028C1.18585 18.7133 1.53669 18.813 2.13117 19.0275C2.87551 19.2959 3.64407 19.4952 4.4178 19.6586C5.91205 19.9742 7.45231 20.2166 8.98592 20.2275" stroke="#FF361B" stroke-width="1.11743"></path>
+                                        <path d="M8.98581 12.1348C10.3154 12.1348 11.4574 11.6337 12.3331 10.6758C12.5926 10.8126 12.8691 10.9327 13.1778 11.0536C13.8119 11.3021 14.5292 11.4373 15.0832 11.8496C16.0411 12.5626 16.2886 14.1665 16.4832 15.2606C16.6437 16.1637 16.7515 17.0854 16.783 18.0028C16.8074 18.7133 16.4556 18.813 15.8594 19.0275C15.113 19.2959 14.3423 19.4952 13.5664 19.6586C12.068 19.9742 10.5234 20.2166 8.98554 20.2275" stroke="#FF361B" stroke-width="1.11743"></path>
+                                        </svg>Контактная информация
+                                    </div>
+                                    <div class="contact-information__form">
+                                        <form method="post" action="#">
+                                            <div class="form__item">
+                                                <div class="contact-information__form-title">Имя</div>
+                                                <input class="contact-information__form-input" type="text" placeholder="Иван">
+                                            </div>
+                                            <div class="form__item">
+                                                <div class="contact-information__form-title">Телефон</div>
+                                                <input class="contact-information__form-input" type="tel" placeholder="+7 900 0000000">
+                                            </div>
+                                            <div class="form__item">
+                                                <div class="contact-information__form-title">E-mail</div>
+                                                <input class="contact-information__form-input" type="email" placeholder="ivanov@mail.ru">
+                                            </div>
+                                            
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-4">
+                    <div class="execution-wrap execution-wrap__last">
+                        <div class="execution__inner">
+                            <div class="execution__quantity"><span>Количество товара</span><span>3 товара</span></div>
+                            <div class="execution__ig-balls"><span>Оплачено iG-баллами</span><span>180 ₽</span></div>
+                            <div class="execution__operator"><span>Курьер по Москве<br>(до МКАД)</span><span>Уточните<br> у оператора</span></div>
+                            <div class="execution__price"><span>Сумма к оплате</span><span>37 180 ₽</span></div>
+                        </div>        
+                        <!-- execution__inner  -->
+                        <a class="execution__btn" href="#">Подтвердить заказ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
