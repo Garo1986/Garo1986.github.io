@@ -364,6 +364,13 @@ body {
 }
 
 @media screen and (max-width: 375px) {
+  .execution__title {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 10px 0;
+  }
   .execution-wrap {
     padding: 20px 7px;
     border-radius: 0;
@@ -378,6 +385,9 @@ body {
   }
   .bonus-account {
     margin-bottom: 30px;
+  }
+  .way-delivery, .way-pay, .bonus-account, .contact-information, .execution__inner {
+    padding: 0 7px;
   }
 }
 /*# sourceMappingURL=style.css.map */
