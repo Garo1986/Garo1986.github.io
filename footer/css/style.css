@@ -389,5 +389,8 @@ body {
   .way-delivery, .way-pay, .bonus-account, .contact-information, .execution__inner {
     padding: 0 7px;
   }
+  .contact-information__time input {
+    padding: 5px 0px 5px 26.5px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
