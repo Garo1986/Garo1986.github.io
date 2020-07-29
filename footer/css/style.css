@@ -316,6 +316,44 @@ body {
   color: #000000;
 }
 
+.contact-information__subtitle {
+  padding-left: 13px;
+  font-size: 13px;
+}
+
+.contact-information__time {
+  overflow: hidden;
+  border: 1px solid #C4C4C4;
+  border-radius: 8px;
+}
+
+.contact-information__time input {
+  outline: none;
+  background: transparent;
+  border: none;
+  padding: 5px 22.5px;
+}
+
+.contact-information__time input::-webkit-input-placeholder {
+  color: #000000;
+  font-size: 16px;
+}
+
+.contact-information__time input:-ms-input-placeholder {
+  color: #000000;
+  font-size: 16px;
+}
+
+.contact-information__time input::-ms-input-placeholder {
+  color: #000000;
+  font-size: 16px;
+}
+
+.contact-information__time input::placeholder {
+  color: #000000;
+  font-size: 16px;
+}
+
 .form__item {
   margin-bottom: 20px;
 }
