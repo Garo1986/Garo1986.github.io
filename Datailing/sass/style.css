@@ -43,7 +43,9 @@ body {
 .header-play_desc {
   color: #000000;
 }
-
+.front {
+  text-align: center;
+}
 .nav-menu_links {
   display: -webkit-box;
   display: -ms-flexbox;
