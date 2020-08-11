@@ -1,0 +1,99 @@
+html
+    box-sizing: border-box
+*,
+*::after,
+*::before 
+    margin: 0
+    padding: 0
+    box-sizing: inherit   
+body
+    font-family: 'SF UI Display', sans-serif
+    font-weight: normal
+    font-size: 16px
+    color: #000000
+.contacts
+	max-width: 1200px
+	margin: 0 auto
+	&__inner
+		background-color: #ffffff
+		border-radius: 10px
+	&__wrap
+		padding: 64.77px 88.71px 46.84px 89.37px
+	&__location
+		display: flex
+		align-items: flex-start
+		font-family: 'SF UI Display', sans-serif
+		font-style: normal
+		font-weight: 300
+		font-size: 16px
+		margin-bottom: 21px
+	&__img
+		margin-right: 8px
+	&__towndown
+		display: flex
+		align-items: center
+		font-family: 'SF UI Display', sans-serif
+		font-style: normal
+		font-weight: 300
+		font-size: 16px
+		&-bottom
+			margin-bottom: 54px
+	&__desc
+		&-adress
+			max-width: 330px
+		a
+			color: #000000
+			text-decoration: none
+	&__items
+		display: flex
+		flex-direction: column
+		a
+			text-decoration: none
+			color: #000000
+			margin-bottom: 10px
+	&__phone
+		display: flex
+		align-items: flex-start
+	&__email
+		display: flex
+		align-items: center
+	&__description
+		height: 100%
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+
+		font-family: 'SF UI Display', sans-serif
+		font-style: normal
+		font-weight: 300
+		font-size: 16px
+		line-height: 167.34%
+		letter-spacing: -0.02em
+		color: #000000
+		p
+			margin-bottom: 0
+
+			font-family: 'SF UI Display', sans-serif
+			font-style: normal
+			font-weight: 300
+			font-size: 16px
+			line-height: 167.34%
+			letter-spacing: -0.02em
+			color: #000000
+
+
+
+	&__opening-hours
+		font-family: 'SF UI Display', sans-serif
+		font-style: normal
+		font-weight: 500
+		font-size: 18px
+		margin: 70px auto 0
+		display: flex
+		align-items: center
+		svg
+			margin-right: 10px
+@media ( max-width: 480px) 
+	justify-content: center
+	
+	
