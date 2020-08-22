@@ -1,0 +1,449 @@
+$gray: rgba(0, 0, 0, 0.85)
+
+*, *::after, *::before
+    box-sizing: border-box
+a
+    text-decoration: none
+    color: inherit
+html
+    font-size: 18px
+body
+    font-family: 'Roboto', sans-serif
+    margin: 0
+    color: #000000
+.container
+    max-width: 1230px
+    margin: 0 auto
+    padding: 0 15px
+    height: 100%
+.header
+    height: 650px
+    &__inner
+        height: 100%
+        display: flex
+        flex-direction: column
+        background-image: url('../img/bg__header.jpg')
+        background-repeat: no-repeat
+        background-position: right bottom
+        background-size: contain
+    &__logo
+        margin: 30px 0
+    &__title
+        h1
+            color: #62A25D
+            font-size: 2rem
+            font-weight: bold
+            margin-bottom: 25px
+            p
+                margin: 0
+    &__start-data
+        text-transform: uppercase
+        font-size: 1.3rem
+        color: rgba(0, 0, 0, .85)
+        font-weight: 500
+        margin-bottom: 30px
+    &__desc
+        max-width: 520px
+        font-weight: 200
+        text-align: justify
+        color: #000000
+        line-height: 21px
+        margin-bottom: 55px
+    &__link
+        a            
+            font-weight: 500
+            font-size: 24px
+            text-align: center
+            text-transform: capitalize
+            color: #FFFFFF
+            background-color: #62A25D
+            border-radius: 5px
+            padding: 20px 60px
+.descriptions
+    margin: 35px 0
+    &__inner
+    &__wrap
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &:first-child
+            margin-bottom: 35px
+    &__desc
+        p
+            font-weight: normal
+            max-width: 870px
+            text-align: justify
+            margin-bottom: 15px
+            margin-top: 0
+            &:last-child
+                margin-bottom: 0
+    &__img
+        max-width: 300px
+.necessity
+    &__title
+        text-align: center
+        text-transform: uppercase
+        font-size: 2rem
+        font-weight: 500
+        margin-bottom: 1rem
+    &__wrap
+        display: flex
+        align-items: center
+        color: #ffffff
+        margin-bottom: 5px
+        &:last-child
+            margin-bottom: 30px
+    &__desc
+        padding-left: 30px
+        padding-right: 30px
+        height: 100%
+        font-weight: 500
+        text-align: justify
+        line-height: 23px
+    &__img
+        width: 400px
+    &__bottom-text
+        text-align: center
+        font-style: normal
+        font-weight: 500
+        font-size: 18px
+        line-height: 21px
+        text-align: center
+        color: #353746
+.line
+    &::before
+        content: ''
+        width: 100%
+        height: 1px
+        background-color: #A399A1
+        display: block
+        margin: 30px 0
+.end-training
+    margin-bottom: 60px
+    &__title
+        text-align: center
+        font-style: normal
+        font-weight: 500
+        font-size: 2rem
+        text-transform: uppercase
+        color: #000000
+        margin-bottom: 40px
+    &__list
+        list-style: none
+        padding-left: 0
+        position: relative
+        li
+            display: flex
+            align-items: center
+            margin-bottom: 50px
+            &:last-child
+                margin-bottom: 0
+        &::before
+            content: ''
+            height: 95%
+            width: 1px
+            background-color: #A399A1
+            position: absolute
+            left: 15px
+            top: 15px
+            z-index: 50
+.list__square
+    width: 30px
+    height: 30px
+    margin-right: 15px
+    z-index: 60
+
+.programm
+    &__title
+        font-style: normal
+        font-weight: 500
+        font-size: 2rem
+        text-align: center
+        text-transform: uppercase
+        color: #FFFFFF
+        padding: 20px 0
+        background-color: #DF682D
+        margin-bottom: 35px
+    &__subtitle
+        padding-left: 0
+        margin-bottom: 35px
+        span
+            display: flex
+            align-items: center
+            font-weight: 500
+            color: #000000
+            font-size: 1.5rem
+            img
+                margin-right: 15px
+        li
+            margin-bottom: 20px
+            color: rgba(0, 0, 0, 0.85)
+            font-weight: normal
+            padding-left: 10px
+            &:last-child
+                margin-bottom: 0
+.leader
+    margin-bottom: 60px
+    &__title
+        font-style: normal
+        font-weight: 500
+        font-size: 2rem
+        text-align: center
+        text-transform: uppercase
+        color: #FFFFFF
+        padding: 20px 0
+        background-color: #469BD8
+        margin-bottom: 35px
+    &__wrap
+        display: flex
+        align-items: center
+        justify-content: space-around
+    &__desc
+        max-width: 760px
+        font-style: normal
+        font-weight: normal
+        font-size: 1rem
+        text-align: justify
+        color: #000000
+.plan
+    margin-bottom: 50px
+    &__title
+        font-style: normal
+        font-weight: 500
+        font-size: 2rem
+        text-align: center
+        text-transform: uppercase
+        color: #FFFFFF
+        padding: 20px 0
+        background-color: #62A25D
+        margin-bottom: 35px
+    &__list
+        list-style-position: inside
+        padding-left: 0
+        &-title
+            font-weight: 500
+            font-size: 1rem
+            text-align: justify
+            color: #000000
+            margin-bottom: 30px
+        li
+            margin-bottom: 20px
+            &:last-child
+                margin-bottom: 35px
+.start
+    margin-bottom: 30px
+    &__title
+        font-style: normal
+        font-weight: 500
+        font-size: 2rem
+        text-align: center
+        text-transform: uppercase
+        color: #FFFFFF
+        padding: 20px 0
+        background-color: #DF682D
+        margin-bottom: 35px
+    &__subtitle
+        margin-bottom: 30px
+        font-weight: normal
+        padding-left: 2rem
+    &__wrap
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: flex-start
+    &__inner
+        // flex-basis: 25%
+        width: 280px
+        height: 100%
+        // height: 350px
+        border: 1px solid #000000
+        border-radius: 8px
+        padding: 30px 10px 30px
+        text-align: center
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        &.active
+            border: 1px solid #DF682D
+            box-shadow: 0 0 5px #DF682D, 0 0 15px #DF682D
+.card
+    &__date
+        font-style: normal
+        font-weight: bold
+        font-size: 1rem
+        color: rgba(0, 0, 0, 0.85)
+        margin-bottom: 20px
+    &__price
+        color: #000000
+        font-weight: 500
+        margin-bottom: 25px
+    &__bonus
+        font-size: 0.9rem
+        color: rgb(0, 0, 0)
+        margin-bottom: 15px
+        &.active
+            color: #DF682D
+    &__block
+        font-size: 0.9rem
+    &__btn
+        display: contents
+        margin-top: 45px
+        
+    &__link
+        padding: 8px 0
+        width: 100%
+        background-color: #C4C4C4
+        border-radius: 10px
+        &.active
+            background-color: #DF682D
+
+// цвета списка блока
+.elipse-yellow
+    list-style-image: url('../img/elipse-yellow.svg')
+.elipse-red
+    list-style-image: url('../img/elipse-red.svg')
+.elipse-green
+    list-style-image: url('../img/elipse-green.svg')
+.elipse-blue
+    list-style-image: url('../img/elipse-blue.svg')
+.elipse-pink
+    list-style-image: url('../img/elipse-pink.svg')
+
+
+// цвета блоков преимуществ
+.bg_orange
+    background-color: #DF682D
+.bg_green
+    background-color: #5FA25D
+.bg_blue
+    background-color: #469BD8
+
+// цвета блоков окончания обучения
+.square__yellow
+    background-color: #FFC924
+.square__red
+    background-color: #DF682D
+.square__green
+    background-color: #5FA25D
+.square__blue
+    background-color: #469BD8
+.square__dark-blue
+    background-color: #29285D
+.square__pink
+     background-color: #FDCBDF  
+@media ( max-width: 1200px )
+    .header
+        &__inner
+            height: auto
+    .descriptions
+        &__img
+            max-width: 250px
+            padding: 0 7px
+            img
+                width: 100%
+                height: 100%
+        &__desc
+            padding: 0 10px
+    .necessity
+        &__img
+            width: 440px
+    .programm
+        &__subtitle
+            margin-left: 20px
+            span
+                font-size: 1.2rem
+    .list
+        &__square
+            min-width: 30px
+            min-height: 30px
+            // max-width: 30px
+            // max-height: 30px
+    .start
+        &__wrap
+            flex-wrap: wrap
+        &__inner
+            margin-bottom: 30px
+@media ( max-width: 1024px )
+    html
+        font-size: 16px
+    .header
+        height: auto
+        &__inner
+            background-size: 70%
+            height: 100%
+    .necessity
+        &__img
+            width: 900px
+    .leader
+        &__img
+            margin-right: 20px
+@media ( max-width: 800px )
+    .header
+        &__inner
+            background-size: 55%
+    .start
+        &__wrap
+            justify-content: space-around
+@media ( max-width: 750px )
+    .header
+        &__inner
+            background-image: none
+            align-items: center
+        &__title
+            text-align: center
+            h1
+                margin-bottom: 5px
+        &__logo
+            margin-bottom: 5px
+        &__start-data
+            margin-bottom: 10px
+        &__desc
+            margin-bottom: 30px
+        &__link
+            a
+                padding: 10px 30px
+                font-size: 1.3rem
+    .necessity
+        &__img
+            display: none
+    .descriptions
+        &__wrap
+            flex-direction: column
+            &:last-child
+                flex-direction: column-reverse
+        &__img
+            max-width: 200px
+            margin-bottom: 7px
+            img
+                border-radius: 0 25px 
+    .programm, .leader, .necessity, .end-training, .plan, .start
+        &__title
+            font-size: 1.3rem
+@media ( max-width: 450px )
+    html
+        font-size: 14px
+    .leader
+        margin-bottom: 20px
+        &__wrap
+            flex-direction: column
+        &__img
+            margin-right: 0
+            img
+                max-width: 150px
+                border-radius: 0 25px
+    .start
+        &__inner
+            display: none
+            &.active
+                display: flex
+@media ( max-width: 400px )
+    .header
+        &__logo
+            // max-width: 70%
+            img
+                width: 100%
+
+    
+
+    
