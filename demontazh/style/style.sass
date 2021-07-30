@@ -1,0 +1,430 @@
+*
+    box-sizing: border-box
+html
+    
+body
+    color: #000
+    font-family: 'Roboto', sans-serif
+    font-size: 24px
+.container
+    max-width: 1260px
+    padding: 0 20px
+    margin: 0 auto
+
+.header
+    min-height: 100vh
+    background: url("../img/header-img.jpg") no-repeat center center
+    background-size: cover
+    padding: 54px 0px 135px
+    &__wrap
+        display: flex
+        flex-direction: column
+        text-align: center
+        justify-content: space-between
+        align-items: center
+    &__logo
+        display: flex
+        justify-self: center
+        margin-bottom: 50px
+        &-img
+            margin: 0 auto
+            width: 100px
+            height: 100px
+    &__nav
+        width: 100%
+        margin-bottom: 3em
+    &__list
+        display: flex
+        justify-content: space-around
+    &__item
+        color: #DEE278
+        text-decoration: none
+        font-weight: bold
+        &:hover
+            color: darken( #DEE278, 20%)
+    &__title
+        text-align: center
+        text-transform: uppercase
+        font-weight: bold
+        color: #fff
+        font-size: 4em
+        margin-bottom: 20px
+    &__subtitle
+        text-align: center
+        color: #fff
+        margin-bottom: 2.5em
+    &__links
+        position: relative
+        &:last-child, &:nth-child(5)
+            
+            
+            &:hover
+                .submenu
+                    
+                    display: block
+        &:nth-child(5)
+            color: #a3ee4e
+            a
+                // color: #a3ee4e
+                // text-decoration: underline
+                // &:hover
+                //     color: lighten(#a3ee4e, 20%)
+    &__btn
+        display: flex
+        justify-content: space-around
+        width: 100%
+    &__callback
+        display: flex
+        align-items: center
+        color: #DEE278
+        text-decoration: none
+        font-weight: bold
+        font-size: 1.5em
+        span
+            margin-right: 20px
+            
+.submenu
+    position: absolute
+    top: 100%
+    left: -50px
+    width: 200px
+    z-index: 10
+    transition: .3s ease-in-out
+    
+    display: none
+    &__list      
+        width: 100%  
+        background-color: #DEE278      
+        a
+            // background-color: #DEE278
+            padding: 5px 5px
+            text-decoration: none
+            color: #fff
+            font-size: .5em
+            &:hover
+                color: darken( #DEE278, 20%)
+                
+                
+
+.desc
+    padding: 30px 0 0
+    &__wrap
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__subtitle
+        text-align: center
+        font-size: 1em
+        font-weight: normal
+        margin-bottom: 1em
+        max-width: 1032px
+    &-inner
+        display: flex
+        align-items: center
+        margin-bottom: 1em
+        align-self: self-start
+        &__description
+            padding: 20px
+        &__title
+            font-weight: normal
+            font-size: 1.5em
+            margin-bottom: 1em
+        &__subtitle
+            margin-bottom: .5em
+            a
+                text-decoration: none
+                color: #000
+                font-weight: bold
+.advantages
+    background-color: #e2e2e2
+    padding: 30px 0
+    &__title
+        text-transform: uppercase
+        text-align: center
+        margin-bottom: 1em
+    &__subtitle
+        text-align: center
+        margin-bottom: 2em
+    &__inner
+        display: flex
+        justify-content: space-between
+        align-self: self-start
+    &-card
+        display: flex
+        flex-direction: column
+        align-self: center
+        flex-wrap: wrap
+        img
+            margin-bottom: 1em
+        &__desc
+            max-width: 210px
+            text-align: center
+.services
+    padding: 30px 0
+    &__title
+        text-align: center
+        text-transform: uppercase
+        margin-bottom: 1.5em
+    &__wrap
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        
+    &-card
+        width: 387px
+        height: 387px
+        padding: 99px
+        border: 1px solid #000
+        border-radius: 7px
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 1.5em
+        text-decoration: none
+        &__title
+            text-align: center
+            color: #fff
+            font-weight: bold
+            font-size: 1.5em
+            transition: .3s linear
+        &:hover
+            .services-card__title
+                text-shadow: 1px 1px #000
+                color: darken(#DEE278, 30%)                
+                
+.flat
+    background: url(../img/flat.jpg) no-repeat center center
+    // background-size: cover
+.windows
+    background: url(../img/windows.jpg) no-repeat center center
+.wallpaper
+    background: url(../img/wallpaper.jpg) no-repeat center center
+.tile
+    background: url(../img/tile.jpg) no-repeat center center
+.door 
+    background: url(../img/door.jpg) no-repeat center center
+.floor 
+    background: url(../img/floor.jpg) no-repeat center center
+.wall 
+    background: url(../img/wall.jpg) no-repeat center center
+.house 
+    background: url(../img/house.jpg) no-repeat center center
+.bathroom 
+    background: url(../img/bathroom.jpg) no-repeat center center
+.garbage-collection 
+    background: url(../img/garbage-collection.jpg) no-repeat center center
+.screed 
+    background: url(../img/screed.jpg) no-repeat center center
+.plaster
+    background: url(../img/plaster.jpg) no-repeat center center
+.questions
+    background-color: #e2e2e2
+    padding: 30px 0
+    &__wrap
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__desc
+        max-width: 875px
+        p
+            &:first-child
+                font-weight: bold
+                margin-bottom: 1em
+            &:last-child
+                font-size: .7em
+    &__btn
+        padding: 10px 20px
+        border: 5px solid #000000
+        border-radius: 15px
+        text-decoration: none
+        color: #000
+        font-size: .7em
+        transition: .2s linear
+        &:hover
+            transform: rotateZ(5deg)
+            color: #2e2e2e
+.galery
+    padding: 30px 0
+    &__title
+        text-align: center
+        text-transform: uppercase
+        margin-bottom: 1.5em
+    &__img
+        padding: 30px
+.slick-prev:before, .slick-next:before
+    color: #2e2e2e
+.project
+    padding: 30px 0
+    &__title
+        text-transform: uppercase
+        text-align: center
+        margin-bottom: 1em
+    &__wrap
+        display: flex
+        justify-content: space-around
+        align-items: center
+        margin-bottom: 1em
+    &__card
+        
+        max-width: 45%
+        border: 3px solid #2e2e2e
+        border-radius: 7px
+        min-height: 600px
+    &__inner
+        position: relative
+        margin-bottom: 1em
+    &__img
+        
+    &__price
+        position: absolute
+        text-align: center
+        left: 0
+        right: 0
+        bottom: 5px
+        background-color: rgba(0, 0, 0, .5)
+        color: #fff
+        padding: 1em 0
+    &__desc
+        padding: 0 .3em
+        p
+            text-align: center
+            margin-bottom: 1em
+    &__link
+        display: flex
+        justify-content: center
+    &__calc
+        text-decoration: none
+        color: #DEE278
+        padding: 10px 20px
+        border: 5px solid #DEE278
+        border-radius: 30px
+        box-shadow: 0px 4px 4px #B4B85F
+        transition: .2s linear
+        &:hover
+            transform: translateY(-3px)
+.footer
+    background-color: #c4c4c4
+    padding: 30px 0
+    &__wrap
+        display: flex
+        justify-content: space-around
+        margin-bottom: 1em
+    &__inner
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        p
+            margin-bottom: 0.5em
+            a
+                text-decoration: none
+                color: #000
+                &:hover
+                    text-decoration: underline
+    &__title
+        font-weight: bold
+        margin-bottom: 1em
+    &__mess
+        display: flex
+        
+        a
+            text-decoration: none
+            &:first-child
+                margin-right: 1em
+
+
+
+
+    &__copyright
+        text-align: center
+@import 'flatDesc'
+
+@media screen and ( max-width: 1025px )
+    body
+        font-size: 20px
+    .container
+        padding: 0 30px
+@media screen and ( max-width: 777px )
+    .services-card
+        width: 40%
+        height: auto
+    .project__card
+        min-height: 420px
+@media screen and ( max-width: 450px )
+    body
+        font-size: 16px
+    .header
+        padding: 54px 0px 35px
+        &__list
+            display: flex
+            flex-wrap: wrap
+        &__links
+            margin-bottom: 1em
+        &__btn
+            flex-wrap: wrap
+        &__callback
+            &:first-child
+                margin-bottom: 2em
+            span
+                width: 40px
+                height: 40px
+    .desc-inner
+        flex-direction: column
+        align-items: flex-start
+    .desc__subtitle
+        text-align: justify
+    .advantages__inner
+        flex-wrap: wrap
+    .advantages-card
+        margin-bottom: 1em
+    .services__wrap
+        flex-direction: column
+        align-items: center
+    .services-card 
+        width: 100%
+        height: 40vh
+    .questions__wrap
+        flex-wrap: wrap
+    .questions__desc
+        margin-bottom: 1em
+    .questions__btn
+        margin: 0 auto
+    .project__wrap
+        flex-wrap: wrap
+    .project__card
+        max-width: 100%
+        margin-bottom: 1em
+    .footer
+        &__wrap
+            flex-direction: column-reverse
+        &__mess
+            a
+                svg
+                    width: 30px
+                    height: 30px
+    .footer__inner
+        &:first-child
+            margin-top: 1em
+@media screen and ( max-width: 400px )
+    body
+        font-size: 14px
+    .header__item
+        display: flex
+        align-items: center
+        span
+            margin-left: 1em
+    .header__callback
+        width: 100%
+        justify-content: center
+    .advantages-card
+        width: 100%
+        &__desc
+            margin: 0 auto
+    .project__card
+        min-height: auto
+@media screen and ( max-width: 350px )
+    body
+        font-size: 12px
+    
+    
+    
+    
